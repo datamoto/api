@@ -15,3 +15,5 @@ Create sales order, fulfill order, split orders, handle return and cancel. Full 
 
 
 To get access to these API, you first need to be a registered user of the Datamoto. Then you can create a App key and use the APP key for login.
+
+You can also find some of the detail at http://datamoto.com
