@@ -5,11 +5,11 @@ REST APIs for Datamoto Online Order Management Software
 
 Datamoto REST APIs provides following: 
 
-1. Invoice and Billing
+a. Invoice and Billing
 
 Create, track and manage quote, invoice and payment online. Recurring invoice, foreign currency, PDF, and Email support. 
 
-2. Sales Order Management 
+b. Sales Order Management 
 
 Create sales order, fulfill order, split orders, handle return and cancel. Full cycles of quote to order and order to invoice are supported. 
 
