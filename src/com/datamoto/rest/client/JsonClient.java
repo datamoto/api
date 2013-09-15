@@ -25,8 +25,8 @@ public class JsonClient
 			WebResource webResource = client.resource("http://localhost:80/json/apikeygen/post");
 			
 			ApiKeyRequest key = new ApiKeyRequest();
-			key.setUsername("d@d.com");
-			key.setPassword("dddd");
+			key.setUsername("json@dm.com");
+			key.setPassword("api123");
 			key.setCompanyId(39L);
 			
 			String input = new Gson().toJson(key);
