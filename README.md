@@ -23,27 +23,39 @@ API Functional Spec:
 --------------------
 
 1) Two points of entries:
+
 	http://datamoto.com/json/api/<module>
+	
 	http://datamoto.com/xml/api/<module>
 	
 2) Security
+
 	- communcation is based on API key and auth token.
+	
 	- user first need to generate these by logging in to the account.
+	
 	- api key and auth toke must present in all communcation with the server.
+	
 	- api key works as username+companyid and auth token works as password.
+	
 	- api key and auth token can only be used from API not from datanoto application/web site.
+	
 
 3) REST API 
+
 	- json is supported
+	
 	- xml is supported	
 	
 4) Request in json or xml format
+
    - api key
    - auth token
    - method (e.g., get, add, update, create, getList etc.)
    - actual request
    
 5) Supported methods  (<module> method name)
+
 	- <listinvoice> getList : returns list of invoices for the companyId (companyId is extract by datamoto from api key - nothing is supply in the API)
 	- <listinvoice> getListByStatus : returns list of invoices for the matching status	(must supply status)
 	- <listinvoice> updateList: update all the invoices and return success or failure. Update in done in the transaction. (must supply invoiceIds)	
@@ -64,6 +76,7 @@ API Functional Spec:
 	
 	
 Design:
+
 	com.billing.menu.api.model : put all the model classes such as Invoice, BatchInvoice, InvoiceProfile, Payment, Salesorder, SalesorderProfile. These classes are strip down versions of the 
 	DAO objects. These objects will only reflect the customer data - not the referrential or internal information of the business logic.
 	
